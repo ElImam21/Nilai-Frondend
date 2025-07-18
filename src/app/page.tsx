@@ -47,7 +47,7 @@ export default function Home() {
 
             <button 
             onClick={() => router.push('/lihat_pendaftaran')}
-            className="relative group px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+            className="relative group px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
               <span className="absolute inset-0 w-full h-full mt-1 ml-1 bg-teal-800 rounded-xl group-hover:mt-0 group-hover:ml-0 transition-all duration-300"></span>
               <span className="relative text-white text-xl font-bold tracking-wider">
                 Lihat Pendaftar

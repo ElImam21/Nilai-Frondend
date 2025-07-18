@@ -91,7 +91,7 @@ export default function LihatPendaftarPage() {
           
           <button 
             onClick={() => router.back()}
-            className="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300 px-4 py-2 rounded-lg hover:bg-blue-50"
+            className="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300 px-4 py-2 rounded-lg hover:bg-blue-50 cursor-pointer"
           >
             Kembali
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -144,13 +144,13 @@ export default function LihatPendaftarPage() {
                     <td className="py-4 px-4">{formatTanggal(item.tanggal_pendaftaran)}</td>
                     <td className="py-4 px-4 flex space-x-2">
                       <button 
-                        className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors"
-                        onClick={() => alert(`Edit untuk ID: ${item.id_pendaftaran} (akan diimplementasikan)`)}
+                        className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-lg hover:bg-indigo-200 transition-colors cursor-pointer"
+                        onClick={() => router.push(`/lihat_pendaftaran/${item.id_pendaftaran}`)}
                       >
                         Edit
                       </button>
                       <button 
-                        className="px-3 py-1 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-colors"
+                        className="px-3 py-1 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-colors cursor-pointer"
                         onClick={() => handleDelete(item.id_pendaftaran)}
                       >
                         Hapus
